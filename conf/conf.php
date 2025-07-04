@@ -5,12 +5,14 @@
 // Take a look at conf.php.example file for an example of conf.php file
 // and explanations for all possibles parameters.
 //
-$dolibarr_main_url_root='http://localhost/dolivar';
-$dolibarr_main_document_root="D:/Xampp/htdocs/dolivar";
+
+$domain = "143.198.229.113";
+$dolibarr_main_url_root='http://'.$domain;
+$dolibarr_main_document_root= $dolibarr_main_url_root;
 $dolibarr_main_url_root_alt='/custom';
-$dolibarr_main_document_root_alt="D:/Xampp/htdocs/dolivar/custom";
-$dolibarr_main_data_root="D:/Xampp/htdocs/documents";
-$dolibarr_main_db_host='localhost';
+$dolibarr_main_document_root_alt= $dolibarr_main_url_root."/custom";
+$dolibarr_main_data_root= $dolibarr_main_url_root."/documents";
+$dolibarr_main_db_host='143.198.229.113';
 $dolibarr_main_db_port='3306';
 $dolibarr_main_db_name='erp_db';
 $dolibarr_main_db_prefix='llx_';
